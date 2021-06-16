@@ -1,0 +1,247 @@
+/*Alternate stylesheet for normal desktop view - dark colour scheme*/
+
+/*set fonts of headers and paragraphs to desired font (throughout all pages)*/
+h1 {
+    font-family: 'Arsenal', sans-serif;
+    color: whitesmoke;
+    margin:0 0 1% 2%;
+}
+
+p {
+    font-family: 'Arsenal', sans-serif;
+    color: whitesmoke;
+}
+
+/*Navigation bar*/
+header {
+    position:sticky; /*header stays at top of screen when scrolling*/
+    top:0;
+}
+nav {
+    display:flex; /*accomodate available screen width - good for different screen sizes*/
+    font-family: 'Arsenal', sans-serif;
+    background-color: black;
+    justify-content: space-around;  /*distribute items evenly in container*/
+    align-items: center;
+    height: 10vh;
+}
+nav a {
+    color:whitesmoke;
+    text-decoration: none;
+    padding:5px;
+    font-size: 15pt;
+}
+
+.logo img{
+    display: inline-block; /*logo inline with navigation text links*/
+    padding-top: 5px;
+    height: 9vh;
+}
+
+/*links to pages on the right - displays in a horizontal list*/
+.navlinks {
+    display:flex;
+    justify-content: space-around;
+    width:40%;
+    list-style: none;
+}
+
+.navlinks a:hover { /*display gold box around link when hovering*/
+    color:#D4AF37; 
+    border-style: solid;
+    border-color: #D4AF37;
+}
+
+.current { /*identify current webpage in header navigation by gold and bold font*/
+    color: #D4AF37;
+    font-weight: bold;
+    display: inline;
+}
+
+/*Background - gold image with a centered white overlay (for all pages except homepage)*/
+.portfolio {
+    display: block;
+    box-sizing: border-box;
+    height:90vh;
+    background-color: rgb(29, 29, 31);
+}
+
+.backlayer {
+    background-color:rgb(54, 54, 58);
+    margin: 0 17% 0 17%;
+    height: 100%;
+}
+
+/*Extend body to all outer edges of page (for all webpages)*/
+body{
+    margin: 0;
+}
+header{
+    margin:0;
+}
+footer{
+    margin:0;
+}
+
+
+/*Footer*/
+footer{
+    background-color: black;
+    margin-bottom: 0;
+    display:block;
+}
+footer span{
+    color: whitesmoke;
+    margin: 15px 0 15px 2%;
+    display:inline-block;
+    font-size: 12pt;
+    font-family: 'Arsenal', sans-serif;
+}
+
+.sm_icons{
+    float: right;
+    margin-right:2%;
+    background-color: black;
+}
+.sm_icons img{
+    display: inline-block;
+    margin:10px 0 0 10px;
+}
+
+/*Portfolio page*/
+    /*text description stuff*/
+    .portfolio details {
+        font-family: 'Arsenal', sans-serif;
+        width: 85%;
+        margin: 0 auto 1% auto;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 4px;
+        padding: 1em 1em 1em 1em;
+        background-color: rgb(29, 29, 31);
+        font-size: 13pt;
+        color: whitesmoke;
+    }
+    .portfolio summary {
+        font-weight: bold;
+        font-size: 20pt;
+        color: whitesmoke;
+    }
+    .portfolio details[open] summary {
+        margin-bottom: .5em;
+    }
+    .works {
+        padding: 3% 0 3% 0;
+    }
+    
+        /*photo gallery stuff*/
+    #gallery {
+        width:85%;
+        display: block;    
+        margin:auto;
+        padding:2em;
+    }
+    .gallerycolumn1, .gallerycolumn2, .gallerycolumn3 {
+        display: inline-block;
+        width: 32%;
+        margin: 0;
+    }
+    .gallerycolumn1 img, .gallerycolumn2 img, .gallerycolumn3 img {
+        width:100%;
+    }
+    #gallery figure{
+        margin:0;
+        overflow: hidden;
+        position: relative;
+    }
+    #gallery a{
+        text-decoration: none;
+        color: rgba(245, 245, 245, 0.63);
+        font-family: 'Arsenal', sans-serif;
+    }
+    #gallery figcaption{
+        background-color: rgba(48, 48, 48, 0.425);
+        display: table;
+        position: absolute;
+        bottom:4px;
+        left:0;
+        right:0;
+        padding:0.5em;
+        z-index: 100;
+        transition: all 250ms;
+        transition-delay: 75ms;
+        
+    }
+    #gallery figcaption:hover{
+        padding-bottom: 45%;
+        padding-top:100%;
+        background-color: rgba(48, 48, 48, 0.836);
+    }
+    #gallery a:hover{
+        color:whitesmoke;
+    }
+    #gallery img:hover{
+        transform: scale(1.1);
+        transition: all 250ms;
+        transition-delay: 75ms;
+    }
+    .style-buttons{
+        margin-left:2%;
+    }
+
+
+    /*Home page*/
+.homeimage { /*set logo image full screen (automatically adjust to stay centered and fullscreen for screen resizing)*/
+    display: block;
+    box-sizing: border-box;
+    height:90vh;
+    background-image: url("../images/home.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#intro h1{ /*'WELCOME' heading - make prominent*/
+    display: block;
+    font-size: 7em;
+    text-align: center;
+    color: whitesmoke;
+}
+#intro p{ /*short self-introduction paragraph - centered below welcome heading*/
+    font-size: 15pt;
+    text-align: center;
+    margin: 0 12% 0 12%;
+    color:whitesmoke;
+}
+#intro a {
+    text-decoration: none;
+    color: #D4AF37;
+}
+#intro a:hover{
+    text-decoration: underline;
+}
+
+.home { /*set plain background for homepage*/
+    background-color:rgb(29, 29, 31);
+}
+.home h3 {
+    font-family: 'Arsenal', sans-serif;
+    color: whitesmoke;
+}
+
+#sitemap{
+    margin: 5% 0 2% 20%;
+}
+#sitemap a{
+    text-decoration: none;
+    font-family: 'Arsenal', sans-serif;
+    color: #D4AF37;
+}
+#sitemap a:hover{
+    text-decoration: underline;
+}
+.sitemapcolumn1, .sitemapcolumn2, .sitemapcolumn3 {
+    width: 33%;
+    display: inline-block;
+    vertical-align: top; /*vertically align column headings*/
+}
+

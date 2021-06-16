@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Home page of website-->
+
+<!--Behind-the-scenes website setup (not seen on webpage)-->
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hannah Donges</title>
+        <link rel="stylesheet" type="text/css" href="./styles/goldstyle.css" id="pagestyle">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Arsenal&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="./images/logo.png"/>
+        <script>
+            function swapStyleSheet(sheet){
+                document.getElementById('pagestyle').setAttribute('href', sheet);
+            }
+        </script>
+    </head>
+
+<!--Webpage content starts here-->
+    
+    <body class="home">
+    <!--Navigation bar: different for homepage - items will be centred.  All items will have a hover state.-->
+    <header>
+        <nav>
+            <ul class="navlinks">
+                <li><a href="./index.html"><div class="current">HOME</div></a></li>
+                <li><a href="./pages/portfolio.html">PORTFOLIO</a></li>
+                <li><a href="./pages/about.html">ABOUT</a></li>
+                <li><a href="./pages/contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <!--End nav bar-->
+
+    <!--Main page content-->
+    
+            <!--Front full-page image - implemented as background image in stylesheet-->
+            <a href="./index.html#intro"><div class="homeimage"></div></a>
+
+            <!--Self-introduction, basic 'about' info -->
+            <div id="intro">
+                <h1>Welcome!</h1>
+                <p>My name is Hannah Donges, and I am an engineer/creator/artist/all-round lover of nice things and Taylor Swift. Here on my site, you will find a number of my engineering projects, amongst my many other obscure hobbies... Head on over to my <a href="./pages/portfolio.html">portfolio</a> to discover what I've been working on, my <a href="./pages/about.html">about page</a> to learn more about me, or browse my website through the site map links below. <br>Enjoy!</p>
+            </div>
+
+            <div id="sitemap">
+                <div class="sitemapcolumn1">
+                    <h3>My Work</h3>
+                    <a href="./portfolio.html">Portfolio</a>
+                </div>
+                <div class="sitemapcolumn2">
+                    <h3>About me</h3>
+                    <a href="./pages/about.html">About</a><br>
+                </div>
+                <div class="sitemapcolumn3">
+                    <h3>Contact me</h3>
+                    <a href="./pages/contact.html">Contact</a><br>
+                </div>
+            </div>
+
+            <div id="home-switch"></div>
+            <div class="style-buttons">
+                    <button onclick="swapStyleSheet('./styles/alternate.css')">Switch to Dark Style</button>
+                    <button onclick="swapStyleSheet('./styles/goldstyle.css')">Default Style Sheet</button>
+            </div>
+    <!--End of main page content-->
+
+    <!--Page footer-->
+    <footer>
+        <span>&#169; Hannah Donges 2021</span>
+        <div class="sm_icons">
+            <a href="https://www.linkedin.com/in/hannah-donges-846427162/" target="_blank"><img src="./images/iconfinder_linkedin_834713.png" width="30" alt="LinkedIn icon"></a>
+            <a href="https://www.instagram.com/han_d_craft/" target="_blank"><img src="./images/iconfinder_2018_social_media_popular_app_logo_instagram_3225191.png" width="30" alt="Instagram icon"></a>
+        </div>
+    </footer>
+    <!--End of footer-->
+    </body>
+
+</html>
