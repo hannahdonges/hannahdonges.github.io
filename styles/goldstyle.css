@@ -1,1 +1,334 @@
+/*Stylesheet for normal desktop view - black, gold, white colour scheme*/
+
+/*set fonts of headers and paragraphs to desired font (throughout all pages)*/
+h1 {
+    font-family: 'Arsenal', sans-serif;
+}
+h2 {
+    font-family: 'Arsenal', sans-serif;
+}
+h3 {
+    font-family: 'Arsenal', sans-serif;
+}
+h4 {
+    font-family: 'Arsenal', sans-serif;
+}
+h5 {
+    font-family: 'Arsenal', sans-serif;
+}
+h6 {
+    font-family: 'Arsenal', sans-serif;
+}
+p {
+    font-family: 'Arsenal', sans-serif;
+}
+
+/*Navigation bar - same for all pages*/
+header {
+    position:sticky; /*header stays at top of screen when scrolling*/
+    top:0;
+}
+nav {
+    display:flex; /*accomodate available screen width - good for different screen sizes*/
+    font-family: 'Arsenal', sans-serif;
+    background-color: black;
+    justify-content: space-around;  /*distribute items evenly in container*/
+    align-items: center;
+    height: 10vh;
+}
+nav a {
+    color:whitesmoke;
+    text-decoration: none;
+    padding:5px;
+    font-size: 15pt;
+}
+
+.logo img{
+    display: inline-block; /*logo inline with navigation text links*/
+    padding-top: 5px;
+    height: 9vh;
+}
+
+/*links to pages on the right - displays in a horizontal list*/
+.navlinks {
+    display:flex;
+    justify-content: space-around;
+    width:35%;
+    list-style: none;
+}
+
+.navlinks a:hover { /*display gold box around link when hovering*/
+    color:#D4AF37; 
+    border-style: solid;
+    border-color: #D4AF37;
+}
+
+.current { /*identify current webpage in header navigation by gold and bold font*/
+    color: #D4AF37;
+    font-weight: bold;
+    display: inline;
+}
+
+/*Background - gold image with a centered white overlay (for all pages except homepage)*/
+.portfolio, .about, .discover, .contact {
+    display: block;
+    box-sizing: border-box;
+    height:90vh;
+    background-image: url("../images/katie-harp-Em96eDRJPD8-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.backlayer {
+    background-color: whitesmoke;
+    margin: 0 17% 0 17%;
+    height: 100%;
+}
+
+/*Extend body to all outer edges of page (for all webpages)*/
+body{
+    margin: 0;
+}
+header{
+    margin:0;
+}
+footer{
+    margin:0;
+}
+#assignmentpage{
+    margin: 2%;
+}
+
+
+/*Footer - same for all pages*/
+footer{
+    background-color: black;
+    margin-bottom: 0;
+    display:block;
+}
+footer span{
+    color: whitesmoke;
+    margin: 15px 0 15px 2%;
+    display:inline-block;
+    font-size: 12pt;
+    font-family: 'Arsenal', sans-serif;
+}
+
+.sm_icons{
+    float: right;
+    margin-right:2%;
+    background-color: black;
+}
+.sm_icons img{
+    display: inline-block;
+    margin:10px 0 0 10px;
+}
+
+
+/*Home page*/
+.homeimage { /*set logo image full screen (automatically adjust to stay centered and fullscreen for screen resizing)*/
+    display: block;
+    box-sizing: border-box;
+    height:90vh;
+    background-image: url("../images/home.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#intro h1{ /*'WELCOME' heading - make prominent*/
+    display: block;
+    font-size: 7em;
+    text-align: center;
+}
+#intro p{ /*short self-introduction paragraph - centered below welcome heading*/
+    font-size: 15pt;
+    text-align: center;
+    margin: 0 12% 0 12%;
+}
+#intro a {
+    text-decoration: none;
+    color: #D4AF37;
+}
+#intro a:hover{
+    text-decoration: underline;
+}
+
+.home { /*set plain background for homepage*/
+    background-color: whitesmoke;
+}
+
+#sitemap{
+    margin: 5% 0 2% 20%;
+}
+#sitemap a{
+    text-decoration: none;
+    font-family: 'Arsenal', sans-serif;
+    color: #D4AF37;
+}
+#sitemap a:hover{
+    text-decoration: underline;
+}
+.sitemapcolumn1, .sitemapcolumn2, .sitemapcolumn3 {
+    width: 33%;
+    display: inline-block;
+    vertical-align: top; /*vertically align column headings*/
+}
+
+
+/*About page*/
+#profilepic{ /*picture of me - position top left of text*/
+    display:inline-block;
+    margin:3% 5% 3% 5%;
+    width: 20%;
+}
+
+.about h2{ 
+    font-family: 'Arsenal', sans-serif;
+    float: right;
+    font-size: 30pt;
+    font-style: italic;
+    margin: 13% 20% 0 0;
+}
+
+.about p{
+    display: block;
+    margin: 0 5% 3% 5%;
+    font-size: 14pt;
+}
+
+/*Contact page*/
+.contact h2 {
+    font-family: 'Arsenal', sans-serif;
+    font-size: 24pt;
+    font-style: italic;
+    display: block;
+    text-align: center;
+    margin:0;
+    padding-top: 3%;
+}
+
+.contact p{
+    display: block;
+    text-align: justify;
+    padding: 1% 10% 0 10%;
+}
+
+.contact form{
+    display: block;
+    font-family: 'Arsenal',sans-serif;
+    text-align: left;
+    margin: 3% 25% 3% 25%;
+}
+
+.textbox { /*text input boxes - light grey outline with shadow, uniform width for all*/
+    float: right;
+    background-color: white;
+    border:1px;
+    border-color: rgb(82, 82, 82);
+    box-shadow:0 0 4px rgba(0,0,0,0.3);
+    transition: .3s box-shadow;
+    width:80%;
+}
+.textbox:hover { /*darken box shadow when input box is hovered over*/
+    box-shadow:0 0 4px rgba(0, 0, 0, 0.616);
+}
+
+.fb-like{
+    margin: 0 0 1% 10%;
+}
+
+.linkedin-share{
+    margin: 0 0 0 10%;
+}
+
+/*Portfolio page*/
+    /*text description stuff*/
+.portfolio details {
+    font-family: 'Arsenal', sans-serif;
+    width: 85%;
+    margin: 0 auto 1% auto;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 1em 1em 1em 1em;
+    background-color: rgb(199, 199, 199);
+    font-size: 13pt;
+}
+.portfolio summary {
+    font-weight: bold;
+    font-size: 20pt;
+}
+.portfolio details[open] summary {
+    margin-bottom: .5em;
+}
+.works {
+    padding: 3% 0 3% 0;
+}
+.portfolio h1{
+    margin:0 0 1% 2%;
+}
+.style-buttons{
+    margin-left:2%;
+}
+
+    /*photo gallery stuff*/
+#gallery {
+    width:85%;
+    display: block;    
+    margin:auto;
+    padding:2em;
+}
+.gallerycolumn1, .gallerycolumn2, .gallerycolumn3 {
+    display: inline-block;
+    width: 32%;
+    margin: 0;
+}
+.gallerycolumn1 img, .gallerycolumn2 img, .gallerycolumn3 img {
+    width:100%;
+}
+#gallery figure{
+    margin:0;
+    overflow: hidden;
+    position: relative;
+}
+#gallery a{
+    text-decoration: none;
+    color: rgba(245, 245, 245, 0.63);
+    font-family: 'Arsenal', sans-serif;
+}
+#gallery figcaption{
+    background-color: rgba(48, 48, 48, 0.425);
+    display: table;
+    position: absolute;
+    bottom:4px;
+    left:0;
+    right:0;
+    padding:0.5em;
+    z-index: 100;
+    transition: all 250ms;
+    transition-delay: 75ms;
+    
+}
+#gallery figcaption:hover{
+    padding-bottom: 45%;
+    padding-top:100%;
+    background-color: rgba(48, 48, 48, 0.836);
+}
+#gallery a:hover{
+    color:whitesmoke;
+}
+#gallery img:hover{
+    transform: scale(1.1);
+    transition: all 250ms;
+    transition-delay: 75ms;
+}
+
+.insta-feed{
+    display: block;
+    text-align: center;
+    margin-top:1%;
+    width:35%;
+}
 
