@@ -244,7 +244,7 @@ footer span{
     margin: 0 0 0 10%;
 }
 
-#sub-button{
+input[type=submit]{
     background-color: black;
     border: none;
     color: whitesmoke;
@@ -256,7 +256,7 @@ footer span{
     float:right;
     margin:1% 0 1% 0; }
 
-#reset-button{
+input[type=reset]{
     background-color: whitesmoke;
     border: none;
     color: black;
