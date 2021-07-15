@@ -244,6 +244,30 @@ footer span{
     margin: 0 0 0 10%;
 }
 
+#sub-button{
+    background-color: black;
+    border: none;
+    color: whitesmoke;
+    padding: 5px 10%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10pt;
+    font-family: 'Arsenal', sans-serif;
+    float:right;
+    margin:1% 0 1% 0; }
+
+#reset-button{
+    background-color: whitesmoke;
+    border: none;
+    color: black;
+    padding: 5px 10%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10pt;
+    font-family: 'Arsenal', sans-serif;
+    float:right;
+    margin:1% 0 1% 0;}
+
 /*Portfolio page*/
     /*text description stuff*/
 .portfolio details {
